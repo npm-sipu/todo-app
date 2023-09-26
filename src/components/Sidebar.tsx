@@ -24,7 +24,6 @@ const Sidebar = ({ toggleSidebar }: TSidebar) => {
               Completed
             </NavLink>
           </li>
-          {/* Add more menu items here */}
         </ul>
       </div>
     </div>

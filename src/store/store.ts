@@ -1,10 +1,11 @@
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 import { configureStore, Action, ThunkAction } from "@reduxjs/toolkit";
 import thunkMiddleware from "redux-thunk";
+import todosReducer from './slices/todoSlice'
 
 const store = configureStore({
   reducer: {
-    //Add your reducers here
+    todos: todosReducer
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(thunkMiddleware),
